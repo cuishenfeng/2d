@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin:0;
+        background: #000;
+        overflow: hidden;
+        position: absolute;
+    }
+</style>
+<script>
+    window.onload=function(){
+        var arr=[];
+        var body=document.getElementsByTagName("body")[0];
+//        按照特定的角度，模拟风的运动
+        var speed=5;
+        var t=setInterval(function () {
+            body.style.transition="transform 3s Linear";
+            speed+=5;
+            body.style.transform="rotate("+Math.sin(Math.PI/180*speed)*10+"deg)";
+        },50)
+//        获取屏幕的宽高
+        var clientW=document.documentElement.clientWidth;
+        var clientH=document.documentElement.clientHeight;
+//        创建雨滴
+        for(var i=0;i<200;i++){
+            var div=document.createElement("div");
+            div.style.cssText="width:4px;height:8px;background:#fff;position:absolute;left:"+(50+(clientW-100)*Math.random())+"px;top:-20px";
+            div.style.transition="transform 3s linear "+Math.random()*4+"s";
+            body.appendChild(div);
+            arr.push(div);
+        }
+//        雨滴移动
+        setTimeout(function(){
+            for(var j=0; j<arr.length; j++){
+                arr[j].style.transform="translate(0,"+clientH+"px)";
+                //添加一个监听事件，第一次动作完成以后实现循环动作
+                arr[j].addEventListener("webkitTransitionEnd",function () {
+                    //停止当前元素的运动，进行下次的运动
+                    this.style.transition="none";
+                    this.style.transform="translate(0,0)";
+                    var that=this;
+                    //再开启一个时间进程，让雨滴动起来
+                    setTimeout(function(){
+                        that.style.transition="transform 2s linear "+Math.random()*4+"s";
+                        that.style.transform="translate(0,"+(clientH+100)+"px)";
+                    })
+                })
+            }
+        },50)
+    }
+</script>
+<body>
+<div></div>
+</body>
+</html>

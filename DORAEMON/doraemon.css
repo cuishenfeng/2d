@@ -1,0 +1,288 @@
+html,body,div{
+    margin:0;padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.doraemon{
+    width:300px;height:600px;
+    margin-left:200px;
+    margin-top: 50px;
+    position: relative;
+}
+/*头部*/
+.head{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 10px #858585;
+    border:2px solid #111111;
+    overflow: hidden;
+    background:  -webkit-linear-gradient(right top,#77dbf3 10%,#0bb4df 70%,#084f62 90%);
+    position: relative;
+}
+.guang{
+    width:30px;height:70px;
+    background: #fff;
+    filter: blur(16px);
+    position: absolute;
+    right:37px;top:10px;
+    transform: rotate(-45deg);
+}
+.face{
+    width: 252px;height: 194px;
+    background: -webkit-linear-gradient(right top,#fff 75%,#eeeeee 82%,#9e9e9e 90%);
+    border:2px solid #101010;
+    border-radius: 181px 188px;
+    position: absolute;
+    bottom: 0;left: 0;right: 0;top: 54px;
+    margin: auto;
+}
+.eyesbox{
+    width:140px;
+    position: absolute;
+    left:52px;top:-40px;
+}
+.eyesbox div{
+    width:70px;height:90px;
+    border:2px solid #111;
+    float: left;
+    background: #fff;
+    position: relative;
+}
+.eyesbox div.eyes1{
+    border-radius: 36px 34px 36px 33px;
+}
+.eyesbox div.eyes1 .eyeLeft{
+    width:15px;height:15px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    right:10px;bottom:20px;
+}
+.eyesbox div.eyes2{
+    border-radius: 36px 34px 33px 36px;
+}
+.eyesbox div.eyes2 .eyeRight{
+    width:15px;height:15px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left:10px;bottom:20px;
+}
+.nose{
+    width:35px;height:35px;
+    background: #cf2d28;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border:2px solid #101010;
+    position: absolute;
+    left:105px;top:38px;
+    z-index: 100;
+}
+.line{
+    width:4px;height:99px;
+    background: #111;
+    position: absolute;
+    left:0;right:0;top:10px;bottom:0;
+    margin:auto;
+    z-index: 20;
+}
+.bazoo{
+    width:180px;height:132px;
+    border-bottom:3px solid #111;
+    border-radius:50%;
+    position: absolute;
+    left:34px;bottom:37px;
+}
+.rect{
+    width:183px;height:50px;
+    background: #fff;
+    position: absolute;
+    left:33px;bottom:74px;
+}
+.huzi{
+    width:204px;height:70px;
+    position: absolute;
+    left:24px;bottom:74px;
+    overflow: hidden;
+}
+.huzi div{
+    width:210px;
+    border:1px solid #111;
+    position: absolute;
+    left:0;top:34px;
+    transform-origin: center;
+}
+.huzi div.huzi1{
+    transform: rotateZ(17deg);
+}
+.huzi div.huzi3{
+    transform: rotateZ(-17deg);
+}
+.danghuzi{
+    width:104px;height:70px;
+    background: #fff;
+    position: absolute;
+    left:74px;top:54px;
+}
+/*铃铛*/
+.nect{
+    width:200px;height:20px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(left,#7b1900 10%,#ab2700 20%,#a72400 90%);
+    border:1px solid #111;
+    position: absolute;
+    top:262px;left:50px;
+    z-index: 100;
+    box-shadow: -5px 0px 10px #333;
+}
+.dang{
+    width:40px;height:40px;
+    border:2px solid #111;
+    background: -webkit-linear-gradient(top,#f9f12a 20%, #e9e11a 40%,#a9a100 90%);
+    border-radius: 50%;
+    position: absolute;left:80px;top:5px;
+    overflow: hidden;
+    box-shadow: -3px 3px 10px #333;
+}
+.dangrect{
+    width:36px;height:6px;
+    border:2px solid #1b1b1b;
+    position: absolute;left:0;top:10px;
+}
+.yuan{
+    width:10px;height:10px;
+    background: #111;
+    position: absolute;left:13px;bottom:5px;
+    border-radius: 50%;
+}
+.dangline{
+    width:2px;height:6px;
+    background: #111;
+    position: absolute;left:17px;bottom:0;
+}
+.fiul{
+    width:19px;height:12px;
+    background: #fff;
+    filter: blur(5px);
+    position: absolute;right:0;top:4px;
+}
+/*腿部*/
+.shank{
+    width:200px;height:170px;
+    background: -webkit-linear-gradient(right,#07bce9 20%,#0074b4 50%,#0087ab 90%);
+    position: absolute;left:50px;top:275px;
+    border:2px solid #111;
+    border-top:none;
+    z-index: 20;
+}
+.shankrect{
+    width:30px;height:110px;
+    position: absolute;left:50px;top:339px;
+    box-shadow: -5px 0 10px #555;
+}
+.shankLeft{
+    width:30px;height:40px;
+    background: #0087ab;
+    position: absolute;
+    left:-2px;top:3px;
+}
+.shankRight{
+    width:30px;height:40px;
+    background: #07bce9;
+    position: absolute;
+    right:-2px;top:3px;
+}
+.footer{
+    width:20px;height:14px;
+    border-radius: 20px 20px 0 0;
+    border:2px solid #111;
+    border-bottom: none;
+    position: absolute;
+    left:89px;bottom:-2px;
+    background: -webkit-linear-gradient(right,#5e5e5e 10%,#ffffff 80%);
+}
+/*口袋*/
+.pocket{
+    width:150px;height:150px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background: -webkit-linear-gradient(right top,#ffffff 70%,#c8c8c8 90%);
+    border:2px solid #111;
+    position: absolute;
+    left:76px;top:264px;
+    z-index: 40;
+}
+.pocketer{
+    width:114px;height:60px;
+    -webkit-border-radius:0 0 60px 60px;
+    -moz-border-radius:0 0 60px 60px;
+    border-radius:0 0 60px 60px;
+    border:2px solid #111;
+    position: absolute;
+    left:18px;top:64px;
+    background: -webkit-linear-gradient(right top,#ffffff 70%,#c8c8c8 95%);
+}
+/*胳膊*/
+.armLeft{
+    width:80px;height:50px;
+    background: #0083a6;
+    border:2px solid #111;
+    border-right:none;
+    position: absolute;
+    left:-13px;top:270px;
+    transform-origin: right center;
+    transform: rotate(-35deg);
+    box-shadow: 0 5px 10px #555;
+}
+.armRight{
+    width:80px;height:50px;
+    background: -webkit-linear-gradient(top,#07beea 80%,#456a72 95%);
+    border:2px solid #111;
+    border-left:none;
+    position: absolute;
+    right:-13px;top:270px;
+    transform-origin: left center;
+    transform: rotate(40deg);
+    box-shadow: 0 5px 10px #555;
+}
+.handLeft{
+    width:60px;height:60px;
+    background: -webkit-linear-gradient(right top,#e1e1e1 10%,#ffffff 50%,#d5d5d5 90%);
+    border-radius: 50%;
+    position: absolute;
+    left:-34px;top:-8px;
+    border:2px solid #111;
+}
+.handRight{
+    width:60px;height:60px;
+    background: -webkit-linear-gradient(right top,#ffffff 50%,#d5d5d5 90%);
+    border-radius: 50%;
+    position: absolute;
+    left:42px;top:-8px;
+    border:2px solid #111;
+}
+/*脚*/
+.footLeft{
+    width:108px;height:28px;
+    border:2px solid #111;
+    border-radius: 40px 25px 25px 13px;
+    position: absolute;
+    left:39px;top:442px;
+    z-index: 100;
+    box-shadow: -5px 0 5px #555;
+    background: -webkit-linear-gradient(top right,#fff 70%,#adadad 95%);
+}
+.footRight{
+    width:108px;height:28px;
+    border:2px solid #111;
+    border-radius: 25px 40px 13px 25px;
+    position: absolute;
+    right:39px;top:442px;
+    z-index: 100;
+    box-shadow: -5px 0 5px #555;
+    background: -webkit-linear-gradient(top right,#fff 70%,#adadad 95%);
+}
